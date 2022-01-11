@@ -1,0 +1,37 @@
+Version of libraries used:
+1. pandas : 1.2.3
+2. numpy : 1.19.2
+3. seaborn : 0.11.1
+4. sklearn : 0.24.1
+5. matplotlib : 3.3.4
+Code
+The 1st block is importing all the needed libraries
+The 2nd block is deleting duplicated data and fill in N/A blocks with the median values for the train set. Also, calculate the correlation for each features in order to draw the heapmap.
+The 3rd block is checking whether there are duplicated data or N/A blocks that need to be dealed with for the test set.
+The 4th block is splitting the train set into train and validation.
+The 5th block is using linear regression to predict fixed acidity against density, also calculate the R^2 score.
+The 6th block is using linear regression to predict residual sugar against density, also calculate the R^2 score.
+The 7th block is using linear regression to predict chlorides against density, also calculate the R^2 score.
+The 8th block is using linear regression to predict free sulfur dioxide against density, also calculate the R^2 score.
+The 9th block is using linear regression to predict total sulfur dioxide against density, also calculate the R^2 score.
+The 10th block is using linear regression to predict alcohol against density, also calculate the R^2 score.
+The 11th block is using linear regression to predict all the six features above against density, also calculate the R^2 score.
+The 12th block is using plotting the scatter plot and linear regression line for fixed acidity against density, residual sugar against density, chlorides against density, free sulfur dioxide against density, total sulfur dioxide against density, and alcohol against density.
+The 13th block is calculating the scores for the 10 features and selecting the 8 best features.
+The 14th block is standardizing the train set data, and splitting it into train set and validation set.
+The 15th block is using different parameters and the selected features to evaluate different logistic regression models and calculate their mean training time, accuracy, and F1 score and also the standard deviation for training time, accuracy, and F1 score.
+The 16th block is plotting the ROC curve with the last model.
+The 17nd block is calculating the AUC value.
+The 18rd block is using different parameters and the selected features to evaluate different neural network models with different number of hidden units and calculate their mean training time, accuracy, and F1 score and also the standard deviation for training time, accuracy, and F1 score.
+The 19th block is plotting the accuracy and the F1 score for different number of hidden units.
+The 20th block is standardizing the test set data, and splitting it into train set and validation set.
+The 21st block is trying 12 combinations of the hyperparameter settings, and use grid search with 5-fold cross validation for each combination.
+The 22nd block is a function that I created on my own to report the three best multi-layer perceptron models with respect to the mean validation score.
+The 23rd block is reporting the 3 best models regarding the mean validation score for the multi-layer perceptron models.
+The 24th block is using the best model in terms of accuracy to predict the instances in the test set, and report the accuracy and F1 score.
+The 25th block is plotting the confusion matrix for the best model.
+The 26st block is oversampling the train set data.
+The 27nd block is performing grid search again with the same hyperparameters in Section 7.1, and also standardizing the features.
+The 28rd block is reporting the 3 best models regarding the mean validation score for the grid search models.
+The 29th block is using the best model in terms of accuracy to predict the instances in the test set, and report the accuracy and F1 score.
+The 30th block is plotting the confusion matrix for the best model.
